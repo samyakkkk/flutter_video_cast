@@ -1,6 +1,7 @@
 import Flutter
 import UIKit
 
+@available(iOS 11.0, *)
 public class SwiftFlutterVideoCastPlugin: NSObject, FlutterPlugin {
     public static func register(with registrar: FlutterPluginRegistrar) {
         let factory = AirPlayFactory(registrar: registrar)

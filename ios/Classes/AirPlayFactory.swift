@@ -7,6 +7,7 @@
 
 import Flutter
 
+@available(iOS 11.0, *)
 public class AirPlayFactory: NSObject, FlutterPlatformViewFactory {
     let registrar: FlutterPluginRegistrar
 
