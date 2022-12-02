@@ -8,6 +8,7 @@
 import Flutter
 import AVKit
 
+@available(iOS 11.0, *)
 public class AirPlayController: NSObject, FlutterPlatformView {
 
     // MARK: - Internal properties
@@ -108,6 +109,7 @@ public class AirPlayController: NSObject, FlutterPlatformView {
 
 // MARK: - AVRoutePickerViewDelegate
 
+@available(iOS 11.0, *)
 extension AirPlayController: AVRoutePickerViewDelegate {
     public func routePickerViewWillBeginPresentingRoutes(_ routePickerView: AVRoutePickerView) {
         channel.invokeMethod("airPlay#onRoutesOpening", arguments: nil)
